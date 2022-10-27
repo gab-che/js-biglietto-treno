@@ -8,7 +8,7 @@ const priceTag = document.getElementById("pricetag");
 const disCount = document.getElementById("discount");
 
 // chiedo i km + li salvo in una variabile
-const userKm = parseInt(prompt("Quanti km devi fare?"));
+let userKm = parseInt(prompt("Quanti km devi fare?"));
 
 
 if (isNaN(userKm)){
@@ -16,7 +16,7 @@ if (isNaN(userKm)){
 }
 
 // chiedo l'età + metto in una variabile
-const userAge = parseInt(prompt("Quanti anni hai?"));
+let userAge = parseInt(prompt("Quanti anni hai?"));
 
 if (isNaN(userAge)){
     userAge = parseInt(prompt("Inserisci un numero valido"));
@@ -44,5 +44,4 @@ const userName = document.getElementById("name");
 userName.innerHTML = prompt("Inserisci il tuo nome completo: ");
 
 const fullPrice = document.getElementById("fullprice");
-fullPrice.innerHTML = (userKm * price);
-
+fullPrice.innerHTML = (userKm * price).toFixed(2);
