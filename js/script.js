@@ -1,3 +1,8 @@
+// informazioni che già conosco
+const price = 0.21;
+const discountYoung = 0.8;
+const discountOld = 0.6;
+
 // chiedo i km + li salvo in una variabile
 let userKm = parseInt(prompt("Quanti km devi fare?"));
 
@@ -15,13 +20,13 @@ if (isNaN(userAge)){
 // diversi alert a seconda dell'età
 if (userAge < 18){
     // se minorenne sconto del 20% (* 0.8)
-    alert(userKm * 0.21 * 0.8);
+    alert (Math.floor(userKm * price * discountYoung).toFixed(2));
 
 } else if( userAge >= 65){
     // se maggiore di 65 sconto del 40% (* 0.6)
-    alert(userKm * 0.21 * 0.6);
+    alert (Math.floor(userKm * price * discountOld).toFixed(2));
 
 } else{
     // altrimenti prezzo pieno
-    alert(userKm * 0.21)
+    alert (Math.floor(userKm * price).toFixed(2));
 }
