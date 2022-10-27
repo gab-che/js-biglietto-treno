@@ -11,14 +11,14 @@ const disCount = document.getElementById("discount");
 let userKm = parseInt(prompt("Quanti km devi fare?"));
 
 
-if (isNaN(userKm)){
+while (isNaN(userKm)){
     userKm = parseInt(prompt("Inserisci un numero valido"));
 }
 
 // chiedo l'età + metto in una variabile
 let userAge = parseInt(prompt("Quanti anni hai?"));
 
-if (isNaN(userAge)){
+while (isNaN(userAge)){
     userAge = parseInt(prompt("Inserisci un numero valido"));
 }
 
