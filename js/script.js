@@ -1,15 +1,15 @@
 // chiedo i km + li salvo in una variabile
-const userKm = parseInt(prompt("Quanti km devi fare?"));
+let userKm = parseInt(prompt("Quanti km devi fare?"));
 
 if (isNaN(userKm)){
-    prompt("Inserisci un numero valido");
+    userKm = parseInt(prompt("Inserisci un numero valido"));
 }
 
 // chiedo l'età + metto in una variabile
-const userAge = parseInt(prompt("Quanti anni hai?"));
+let userAge = parseInt(prompt("Quanti anni hai?"));
 
 if (isNaN(userAge)){
-    prompt("Inserisci un numero valido");
+    userAge = parseInt(prompt("Inserisci un numero valido"));
 }
 
 // diversi alert a seconda dell'età
