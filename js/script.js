@@ -26,7 +26,7 @@ while (isNaN(userAge)){
 if (userAge < 18){
     // se minorenne sconto del 20% (* 0.8)
     priceTag.innerHTML = (userKm * price * discountYoung).toFixed(2);
-    disCount.innerHTML = "20%"
+    disCount.innerHTML = "20%";
 
 } else if( userAge >= 65){
     // se maggiore di 65 sconto del 40% (* 0.6)
